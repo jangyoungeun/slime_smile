@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1:300|Kirang+Haerang" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<title>slime</title>
+	<style>
+		p{font-family: 'Gothic A1', sans-serif;}
+		h1{font-family: 'Kirang Haerang', cursive;}
+		p{word-break: keep-all;}
+		div{width: auto;}
+
+		#about {width:auto;position: absolute;left:25%;
+			top:-70px;
+			font-size: 11em;}
+		#about p{font-family: 'Kirang Haerang', cursive;}
+
+		#main img{position:relative; width: 100%;transition: all 1.5s;}
+		#main img:hover{transform: scaleX(40);}
+
+		#main_p {width: 580px;
+			position:absolute; left: 7%;}
+		#main_p p{font-size: 1.4em}
+
+		#normal{position: absolute;top: 1200px;left: 20%;}
+		#normal img{width: 400px;}
+		#normal p{position: absolute; top:80px; left:90px;font-size: 4.5em;
+			font-family: 'Kirang Haerang', cursive;}
+		#crunch{position: absolute;top: 1200px;right: 20%}
+		#crunch img{width: 400px;}
+		#crunch p{position: absolute; top:80px; right:90px;font-size: 4.5em;
+			color:white;
+			font-family: 'Kirang Haerang', cursive;}
+
+		#intro {position: absolute;left: 20%;
+			margin-top:900px;
+			width:60%;text-align: center;}
+		#intro p{font-size: 1.4em;}
+
+		#normal_line{position: absolute; top: 2200px;
+			width: auto;}
+		#normal_line img{width: 100%;}
+		#normal_line p{position: absolute;top: -43px;
+			left: 7%;
+			font-size: 4em;
+			font-family: 'Kirang Haerang', cursive;}
+
+		#cha{position: absolute; left: 12%; top:2500px;}
+		#cha img {width: 400px;}
+		#cha p{position: absolute;top:-5px;left: 90px;
+			font-size: 1.4em;font-family: 'Kirang Haerang', cursive;}
+		#cream{position: absolute;left: 45%; top:2550px;}
+		#cream img {width: 250px;}
+		#cream p{position: absolute;top:-15px;left: 50px;
+			font-size: 1.4em;font-family: 'Kirang Haerang', cursive;}
+		#butter{position: absolute;left: 150px;top: 2780px;}
+		#butter img {width: 750px;}
+		#butter p{position: absolute;top:35px;left: 150px;
+			font-size: 1.4em;font-family: 'Kirang Haerang', cursive;}
+		#cloud{position: absolute;top:3300px;left: 450px;}
+		#cloud img{width: 600px;}
+		#cloud p{position: absolute;top: 20px;left: 120px;
+			font-size: 1.4em;font-family: 'Kirang Haerang', cursive;}
+		#cheese {position: absolute;top: 3430px;left: 120px;}
+		#cheese img{width: 450px;}
+		#cheese p{position: absolute;top: 5px;left: 90px;
+			font-size: 1.4em;font-family: 'Kirang Haerang', cursive;}
+
+		#a {position: absolute;left: 70%; top:2700px;width: 350px;}
+		#a p{font-size: 1.4em;}
+		#a h1{position: absolute;top: -110px;left: -30px;
+			font-size: 4em;}
+		#b {position: absolute;left: 70%; top:3150px;width: 350px;}
+		#b p{font-size: 1.4em;}
+		#b h1{position: absolute;top: -110px;left: -30px;
+			font-size: 4em;}
+		#c {position: absolute;left: 70%; top:3600px;width: 350px;}
+		#c p{font-size: 1.4em;}
+		#c h1{position: absolute;top: -110px;left: -30px;
+			font-size: 4em;}
+		#d {position: absolute;left: 25%; top:4100px;width: 700px;}
+		#d p{font-size: 1.4em;}
+		#d h1{position: absolute;top: -110px;left: -30px;
+			font-size: 4em;}
+		#e {position: absolute;left: 25%; top:4400px;width: 700px;}
+		#e p{font-size: 1.4em;}
+		#e h1{position: absolute;top: -110px;left: -30px;
+			font-size: 4em;}
+
+		#crunch_line{position: absolute; left:0px;top: 4800px;
+			width: auto;}
+		#crunch_line img{width: 100%;}
+		#crunch_line p{position: absolute;top: -43px;
+			left: 7%;
+			font-size: 4em; color: white;
+			font-family: 'Kirang Haerang', cursive;}
+
+		#pearl{position: absolute;left: 20%;top: 5200px;}
+		#pearl img{width: 1000px;}
+
+		#a_2{position: absolute;top: 6400px;left:27%; width: 800px;}
+		#a_2 p{font-size: 1.4em;}
+		#a_2 h1{position: absolute;top: -110px;left: -30px;
+			font-size: 4em;}
+
+		#rice{position: absolute;left: 10%;top: 6900px;}
+		#rice img{width: 700px;}
+		#purple{position: absolute;left: 20%;top: 7200px;}
+		#purple img{width: 900px;}
+		#b_2{position: absolute;top: 7000px; right: 10%;width: 350px;}
+		#b_2 p{font-size: 1.4em;}
+		#b_2 h1{position: absolute;top: -110px;left: -30px;
+			font-size: 4em;}
+
+		#glitter {position: absolute;right: 17%;top: 8400px;}
+		#glitter img{width: 700px;}
+		#uni {position: absolute;right: 7%;top: 8900px;}
+		#uni img{width: 650px;}
+		#band {position: absolute;right: 25%;top: 9400px;}
+		#band img{width: 500px;}
+		#c_2{position: absolute;top: 9000px; left: 13%;width: 350px;}
+		#c_2 p{font-size: 1.4em;}
+		#c_2 h1{position: absolute;top: -110px;left: -30px;
+			font-size: 4em;}
+
+
+		#what{position: absolute; top: 10400px;width: 100%;}
+		#what img{width: 100%;}
+		#what p{position: absolute; left: 50%; top: 60px;
+			font-size: 7em; color: white;
+		font-family: 'Kirang Haerang', cursive;}
+
+
+		#select {position: absolute;top: 10900px; width:auto;}
+		#select img{width: 100%;}
+		#select p{position: absolute;top: 1700px; left:11%;width: 78%; font-size: 1.4em; text-align: center;}
+
+		#mark {position: absolute;top: 13200px; width: 100%;
+			text-align: center;}
+		#mark p{font-size: 1em;}
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div id="about">
+		<p><b>about SLIME</b></p>
+	</div>
+	<div id="main">
+		<img src="main2.png">
+	</div>
+	<div id="main_p">
+		<p><b>*액체괴물과 비슷한 외국 장난감.</b>
+			<br>
+			<br>
+외국에서 유행 중으로, 글리터, 반짝이, 폼볼부터 심지어 진주, 핀, 스폰지, 보석, 플라스틱, 고무줄... 등 무궁무진한 재료에, 소리의 팅글이 좋아 ASMR용으로 자주 쓰인다.</p>
+	</div>
+
+
+	<div id="normal">
+		<img src="butter-01.png">
+		<p><b>NORMAL</b></p>
+	</div>
+	<div id="crunch">
+		<img src="rice-01.png">
+		<p><b>CRUNCH</b></p>
+	</div>
+	<div id="intro">
+		<p>우선 슬라임을 크게 두가지로 나눈다면 <b>일반형</b>과 <b>반응형</b>으로 나눌 수 있다.<br><b>일반형</b>은 베이스가 되는 풀(사실 제조회사)을 따라 이름을 붙인다. 보통 우리가 아는 ‘액체괴물’과 비슷하게 생긴 지글부터 엘머스, 우드, 아모스 등 마치 어릴적 찰흙놀이하듯 이물감없이 부드럽게 플레이 할 수 있는 타입을 말한다. <b>반응형</b>은 조금 더 자극적인 편인데, PP나 진주같은 동그란 알갱이부터 고무줄이나 작은 피규어까지도 첨가하는 타입을 말한다. 베이스에 기포가 생기고 터지며 재료끼리 부딪히며 만들어내는 자극들이 촉각과 청각을 모두 자극하기에 충분하여 많은 이들의 사랑을 받고있다.<br>보다 더 자세한 설명을 통해, 나에게 맞는 슬라임을 찾아보자.</p>
+	</div>
+	<div id="normal_line">
+		<img src="normal-01.png">
+		<p><b>NORMAL TYPE</b></p>
+	</div>
+	<div id="cha">
+		<img src="cha-01.png">
+		<p><b>B.</b></p>
+	</div>
+	<div id="cream">
+		<img src="cream_glo-01.png">
+		<p><b>C.</b></p>
+	</div>
+	<div id="cheese">
+		<img src="cream.png">
+		<p><b>D.</b></p>
+	</div>
+	<div id="butter">
+		<img src="butter-01.png">
+		<p><b>A.</b></p>
+	</div>
+	<div id="cloud">
+		<img src="sherbet-01.png">
+		<p><b>E.</b></p>
+	</div>
+
+	<div id="a">
+		<h1>A.</h1>
+		<p><b>[ 버터 슬라임 ]</b><br>우드글루를 베이스로 한 슬라임이다. 촉감과 비주얼이 버터를 닮아 보통 버터 슬라임이라고 부른다. 찰랑거리거나 튀지않고 손에 잘 붙지않아 부담스럽지 않은 플레이가 가능하다.</p>
+	</div>
+	<div id="b">
+		<h1>B.</h1>
+		<p><b>[ 엘머스 슬라임 ]</b><br>아무것도 첨가가 되지않은 기본을 클리어 슬라임이라고 한다면, 그 다음으로 베이직한 슬라임이다. 엘머스라는 회사의 스쿨글루를 베이스로 하여 이름이 엘머스이다. 깔끔하고 쫀쫀한 플레이가 가능하며 입문용으로 적합하다.</p>
+	</div>
+	<div id="c">
+		<h1>C.</h1>
+		<p><b>[ 생크림 슬라임 ]</b><br>생크림과 흡사한 비주얼과 향을 가져 빵모형 위에 얹어진 사진으로 유명하다. 깨끗한 비주얼을 유지시키는 게 관건이다.</p>
+	</div>
+	<div id="d">
+		<h1>D.</h1>
+		<p><b>[ 덩어리 슬라임 ]</b><br>크림치즈나 살사소스를 만지는 듯한 촉감이 특징이다. 다른 알갱이를 넣지않고 뭉쳐지는 입자만으로 새로운 느낌을 준다.</p>
+	</div>
+	<div id="e">
+		<h1>E.</h1>
+		<p><b>[ 구름 슬라임 ]</b><br>구름, 샤베트, 슬러시, 눈꽃 등 다양한 이름으로 불리우며 요즘 가장 핫한 슬라임이다. 구름을 찢는 듯 풍부하고 푹신한 덩어리를 가르면 거미줄같은 비주얼과 함께 설탕 수박같은 가루군집이 손 끝을 자극하는 가장 부드럽지만 자극적인 슬라임이다.</p>
+	</div>
+	<div id="crunch_line">
+		<img src="berry_line-01.png">
+		<p><b>CRUNCH TYPE</b></p>
+	</div>
+
+	<div id="pearl">
+		<img src="pearl-01.png">
+	</div>
+	<div id="a_2">
+		<h1>A.</h1>
+		<p><b>[ 진주 슬라임 ]</b><br>한국에 슬라임 열풍을 불러일으킨 주역으로, 아이유가 인스타그램에 진주슬라임 플레이 영상을 찍어 업로드하면서 선풍적인 관심과 인기를 얻기 시작했다. 크런치 슬라임의 유행과 수많은 '슬라이머' 양산의 시발점이라고 할 수 있다.</p>
+	</div>
+	<div id="rice">
+		<img src="rice-01.png">
+	</div>
+	<div id="purple">
+		<img src="candy-01.png">
+	</div>
+	<div id="b_2">
+		<h1>B.</h1>
+		<p><b>[ 알갱이 슬라임 ]</b><br>PP알갱이나 PVC눈, 우리가 흔히 아는 폼알갱이를 넣어 만든 슬라임이다. 진주와 함께 가장 많이 찾는 아이템인 동시에 인스타나 유투브 외국 영상에서 자주 볼 수 있다. 알갱이로 가득 덮힌 슬라임을 손으로 콰작 누르는 영상들이 주로 유명하다.</p>
+	</div>
+	<div id="glitter">
+		<img src="crunch-01.png">
+	</div>
+	<div id="uni">
+		<img src="uni-01.png">
+	</div>
+	<div id="band">
+		<img src="band-01.png">
+	</div>
+	<div id="c_2">
+		<h1>C.</h1>
+		<p><b>[ 비주얼 슬라임 ]</b><br>주로 클리어 슬라임에 플라스틱 소재의 알갱이+글리터+스팽글의 조합으로 반짝거리고 영롱한 빛깔의 슬라임과, 아예 캐릭터나 미니어쳐 피규어들을 자잘히 넣은 슬라임, 형형색색의 고무줄을 한데 넣어 씨리얼처럼 보이는 슬라임들은 시각적 요소에 중점을 둔 비주얼 슬라임이라고 할 수 있다. 영상과 사진을 찍기에 적합하나, 스팽글과 고무줄의 비율을 잘 조절한다면 훌륭한 크런치 슬라임으로 탄생한다.</p>
+	</div>
+	<div id="what">
+		<img src="avatar-01.png">
+		<p><b>WHAT IS YOUR SLIME?</b></p>
+
+	</div>
+	<div id="select">
+		<img src="lastttt-01.png">
+		<p>다 큰 어른이 점토같은 덩어리나 조물거리고 있는 것이, 이상하리만큼 유행이다. 그것도 전 세계적으로. 키즈와 어덜트의 합성어인 '키덜트'로 불리우는 '요즘 어른'들의 최고 관심사이자, 인기아이돌이 SNS에 플레이영상을 업로드한 뒤 000슬라임이라는 이름으로 선풍적으로 팔리고 있는 상업품이며, 예쁜색의 투명한 그것을 늘였다 뭉쳤다 늘였다 뭉쳤다하면 영롱한 색색의 구슬들끼리 부딪히며 타닥거리고 그 사이 만들어진 크고 작은 기포들이 터져 팅글적으로 콰자작거리는 이 요물을, 당장 나의 지치고 피폐한 몸과 영혼을 위로해줄 것이 필요한 당신께 적극 추천한다.<br><br><b>안만져본 사람은 있어도 한번만 만져본 사람은 없다는 그, 슬라임이다.</b></p>
+	</div>
+	<div id="mark">
+		<p>Digital Publising｜about SLIME｜2015286044｜장영은
+		</p>
+	</div>
+</body>
+</html>
